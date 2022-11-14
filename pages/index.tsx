@@ -54,6 +54,9 @@ export default function Home() {
 		  <div className={styles.card}>
 			<a href="homepage/homepage.tsx" className={styles.title}>
 				<h2>Homepage &rarr;</h2>
+				<p>
+					Go to homepage with singUp page
+				</p>
 			</a>
 		  </div>
         </div>
