@@ -16,11 +16,9 @@ export default function Home() {]
 					Cadastro do Entregador
 				</h1>
 
-				<form>
-					 <label for="Deliverer" className="title" >
-						Nome:
-					</label>
-           			 <input type="text" id="Deliverer" name="Name" placeholder="Nome Sobrenome" required/>
+				<form method="POST" action="http://localhost:3000">
+					 <label for="Deliverer">Nome:</label>
+           			<input type="text" id="Deliverer" name="Name" placeholder="Nome Sobrenome" required/>
            			 <label for="Deliverer">Email:</label>
            			 <input type="text" id="Deliverer" name="Email" placeholder="example@email.com" required/>
            			 <label for="Deliverer">CPF:</label>
