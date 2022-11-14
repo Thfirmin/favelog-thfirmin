@@ -51,7 +51,7 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-			<a href="homepage/homepage.tsx" className={styles.card}>
+			<a href="ola.html" className={styles.card}>
 				<h2>Homepage &rarr;</h2>
 				<p>
 					Go to homepage with singUp page
