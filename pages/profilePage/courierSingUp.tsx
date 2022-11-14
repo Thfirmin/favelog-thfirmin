@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../../Home.module.css'
+import styles from '../../styles/Home.module.css'
 
-export default function Home() {]
+export default function Home() {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -12,26 +12,23 @@ export default function Home() {]
 			</Head>
 
 			<main className={styles.main}>
-				<h1 className={styles.title}>
-					Cadastro do Entregador
-				</h1>
+				<div>
+					<a href="../">
+						<button className={styles.button}>&larr;</button>
+					</a>
+				</div>
 
-				<form method="POST" action="http://localhost:3000">
-					 <label for="Deliverer">Nome:</label>
-           			<input type="text" id="Deliverer" name="Name" placeholder="Nome Sobrenome" required/>
-           			 <label for="Deliverer">Email:</label>
-           			 <input type="text" id="Deliverer" name="Email" placeholder="example@email.com" required/>
-           			 <label for="Deliverer">CPF:</label>
-           			 <input type="text" id="Deliverer" name="Cpf" placeholder="xxx.xxx.xxx-x" required/>
-           			 <label for="Deliverer">Telefone:</label>
-           			 <input type="text" id="Deliverer" name="Telphone" placeholder="(xx) xxxxx-xxxx" required/>
-           			 <label for="Deliverer">Chave Pix:</label>
-           			 <input type="text" id="Deliverer" name="Pix-key" placeholder="xxx" required/>
-           			 <label for="Deliverer">Placa da Moto:</label>
-           			 <input type="text" id="Deliverer" name="Bike-plate" placeholder="XXX-0X00" required/>
-           			 <label for="Deliverer">Modelo da Moto:</label>
-           			 <input type="text" id="Deliverer" name="Bike-model" placeholder="xxx" required/>
-           			 <button type="submit">Enviar</button>
+				<form method="POST" action="http://localhost:3000/api">
+           			<input type="text" id="name" name="name" placeholder="Nome" required/>
+           			<input type="text" id="lastname" name="lastname" placeholder="Sobrenome" required/>
+           			<input type="text" id="email" name="email" placeholder="E-mail" required/>
+           			<input type="text" id="tel" name="tel" placeholder="Telefone" required/>
+           			<input type="text" id="pix" name="pix" placeholder="Pix" required/>
+           			<input type="text" id="address" name="address" placeholder="Favela de Atua&ccedil;&atilde;o" required/>
+           			<input type="text" id="cpf" name="cpf" placeholder="CPF" required/>
+           			<input type="text" id="vehicleModel" name="vehicleModel" placeholder="Modelo da Moto" required/>
+           			<input type="text" id="vehiclePlate" name="vehiclePlate" placeholder="Placa da Moto" required/>
+           			<button type="submit">CADASTRAR</button>
 					
 				</form>
 			</main>
