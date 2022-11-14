@@ -17,14 +17,14 @@ export default function Home() {
 
 				<div className={styles.grid}>
 					<div clasName={styles.card}>
-						<a className={styles.title}>
+						<a href="../profilePage/courierSingUp.tsx" className={styles.title}>
 							<h2>Entregador</h2>
 						</a>
 					</div>
 
 					<div className={styles.card}>
 						<div className={styles.card}>
-							<a className={styles.title}>
+							<a href="../profilePage/retailSingUp.tsx" className={styles.title}>
 								<h2>Comerciante</h2>
 							</a>
 						</div>
